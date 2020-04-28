@@ -13,7 +13,7 @@ app.use(cors({ origin: true, credentials: true }));
 // Init Middleware
 app.use(express.json({ extended: false }));
 
-app.get('/', (req, res) => res.send('API de fisdesigns'));
+app.get('/api', (req, res) => res.send('API de fisdesigns'));
 
 // use Routes
 app.use('/api/sendemail', email);
